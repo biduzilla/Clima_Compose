@@ -1,10 +1,9 @@
 package com.example.climacompose.di
 
-import com.example.climacompose.data.location.DefaultLocationTracker
-import com.example.climacompose.domain.location.LocationTracker
+import com.example.climacompose.data.repository.WeatherRepositoryImpl
 import com.example.climacompose.domain.repository.WeatherRepository
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
@@ -13,9 +12,9 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 abstract class RepositoryModule {
 
-    @Provides
+    @Binds
     @Singleton
-    abstract fun bindRepository(
-        weatherRepository: WeatherRepository
+    abstract fun bindWeatherRepository(
+        weatherRepositoryImpl: WeatherRepositoryImpl
     ): WeatherRepository
 }
