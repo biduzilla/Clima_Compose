@@ -18,7 +18,7 @@ fun WeatherForecast(
 ) {
     state.weatherInfo?.weatherDataPerDay?.get(0)?.let { data ->
         Column(
-            modifier = Modifier
+            modifier = modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
         ) {
@@ -27,7 +27,7 @@ fun WeatherForecast(
                 fontSize = 20.sp,
                 color = Color.White
             )
-            Spacer(modifier = Modifier.width(16.dp))
+            Spacer(modifier = Modifier.height(16.dp))
             LazyRow(content = {
                 items(data) { weatherData ->
                     HourlyWeatherDisplay(
