@@ -1,4 +1,4 @@
-package com.example.climacompose.presentation.theme
+package com.example.climacompose.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

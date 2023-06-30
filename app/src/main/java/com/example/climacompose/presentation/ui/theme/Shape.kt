@@ -1,4 +1,4 @@
-package com.example.climacompose.presentation.theme
+package com.example.climacompose.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
